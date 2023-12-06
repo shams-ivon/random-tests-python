@@ -10,9 +10,10 @@ arrow_turtle.width(4)
 total_angle = 0
 
 def random_color():
-    rgb = [10, 30, 80, 120, 170, 240]
-    random.shuffle(rgb)
-    return tuple(rgb[0:3])
+    r = random.randint(10, 255)
+    g = random.randint(10, 255)
+    b = random.randint(10, 255)
+    return tuple((r, g, b))
 
 
 for polygon_size in range(3, 11):
